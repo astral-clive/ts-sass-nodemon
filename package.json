@@ -1,0 +1,30 @@
+{
+  "name": "ts-scss-nodemon",
+  "version": "1.0.0",
+  "description": "Template by Paul Hitchmough",
+  "main": "index.js",
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "nodemon": "^2.0.16",
+    "sass": "^1.52.1",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2"
+  },
+  "scripts": {
+    "start:ts": "tsc -w",
+    "start:js": "nodemon public/js/bundle.js",
+    "start:scss": "sass --watch src/styles.scss:public/css/style.css",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astral-clive/math-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/astral-clive/math-game/issues"
+  },
+  "homepage": "https://github.com/astral-clive/math-game#readme"
+}
